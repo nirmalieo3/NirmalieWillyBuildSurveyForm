@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 
 <html>
+    <head>
+        <title>Survey Form</title>
+    </head>
     <body>
-<title>Survey Form</title>
 
-        <h1 id = "title"></h1>
+
+        <h1 id = "title">Survey Form</h1>
 
         <p= "description"></p>
 
         <form id = "survey-form" >
-            <input id = name type = "text" placeholder="Nirmalie">
+              <label for="name" id="name">Enter your name</label>
+            <input id = "name" type = "text" placeholder="Nirmalie" required>
+                <label for="email" id="email">Enter your email</label>
+            <input id = "email" type = "email" placeholder="enter your email" required>
+                  <label for="age" id="age">Enter your age</label>
+            <input id = "number" type = "number" placeholder="enter your age" min = "18" max = "85"  required>
+            <select id ="dropdown">
+                <option value= "single">Single</option>
+                <option value= "married">Marrid</option>
+                <option value= "occupied">Occupied</option>
+                <option value= "devorced">Devorced</option>
+            </select>
+            
 
 
         </form>
